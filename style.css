@@ -77,13 +77,20 @@ body {
   justify-self: right;
 }
 
-.measurement-con > button {
+.nav-btn {
   color: #fff;
   height: 100%;
   width: 5rem;
   border-radius: 1.2rem;
   background-color: transparent;
   border: 0.2rem #fff solid;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: #26cacb;
+  background-color: #fff;
+  transition: all 0.2s;
 }
 
 /**********************************/
@@ -91,18 +98,22 @@ body {
 /**********************************/
 .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .info-con {
   width: 60rem;
 }
 
-.weather-header {
+.weather-header,
+.summary-con {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.weather-header {
+  margin-bottom: 5rem;
 }
 
 .city-name {
@@ -111,4 +122,51 @@ body {
 
 .date-time {
   font-size: 2rem;
+}
+
+.weather-card {
+  display: flex;
+}
+
+.summary-con {
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.weather-icon {
+  font-size: 6rem;
+}
+
+.temp {
+  font-size: 4.8rem;
+}
+
+.conditions {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+
+.details-con {
+  width: 45rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.detail-con {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-heading {
+  font-size: 2.8rem;
+}
+
+.detail {
+  font-size: 2.4rem;
 }
