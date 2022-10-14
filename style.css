@@ -73,6 +73,7 @@ body {
   background-color: transparent;
   border: 0.2rem #fff solid;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .nav-btn:hover {
@@ -91,6 +92,8 @@ body {
 
 .info-con {
   width: 60rem;
+  display: flex;
+  justify-content: center;
 }
 
 .weather-header,
@@ -168,4 +171,13 @@ body {
 
 .weather-info-con {
   display: flex;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
 }
